@@ -500,28 +500,49 @@ a:hover {
     justify-content: center;
   }
 
-  .research-item, .education-item, .experience-item, .project-item {
+  .research-item,
+  .education-item,
+  .experience-item,
+  .project-item {
     flex-direction: column;
+    align-items: center; /* center-align contents */
+    text-align: center;  /* for better vertical layout */
   }
 
-  .research-image, .project-media {
+  .research-image,
+  .project-media {
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;              /* ✅ */
+    justify-content: center;    /* ✅ */
+    align-items: center;        /* ✅ */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .research-image video {
+    width: 100%;
+    height: auto;
+    display: block;             /* ✅ ensure no inline box issues */
+    border-radius: 8px;
+  }
+
+  .research-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .education-logo,
+  .experience-logo {
     margin: 0 auto;
   }
 
-  .education-logo, .experience-logo {
-    margin: 0 auto;
-  }
-
-  /* ✨ New sizing fixes */
-  /* .education-logo img, .experience-logo img {
-    max-width: 150px;
+  .project-media img,
+  .project-media video {
+    max-width: 250px;
     height: auto;
-  } */
-
-  .project-media img, .project-media video {
-    max-width: 250px; /* You can adjust: maybe 250px or 300px */
-    height: auto;
-    margin-top: 10px; /* optional: adds space above */
+    margin-top: 10px;
   }
 
   .course-institution img {
@@ -530,14 +551,6 @@ a:hover {
     display: block;
     margin: 10px auto 0;
   }
-  /* .education-logo img,
-  .education-logo video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  } */
-
 }
 
 .news-section {
