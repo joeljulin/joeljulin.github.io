@@ -229,6 +229,9 @@ a:hover {
 .profile-image {
   width: 250px;
   height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.208);
 }
 
 .name {
