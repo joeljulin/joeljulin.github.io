@@ -5,106 +5,226 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Joel Julin</title>
   <meta name="author" content="Joel Julin">
+  <meta name="description" content="Joel Julin is a Ph.D. student in Robotics at Carnegie Mellon University researching 3D vision, neural rendering, and dynamic scene representations.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
   <base target="_blank" rel="noopener noreferrer">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261015-vr-size">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Header Section -->
-    <div class="header">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#top" class="nav-name" target="_self" aria-label="Joel Julin, return to top">
+        <span class="nav-mark" aria-hidden="true">JJ</span>
+        <span>Joel Julin</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#news" target="_self">News</a></li>
+        <li><a href="#research" target="_self">Research</a></li>
+        <li><a href="#education" target="_self">Education</a></li>
+        <li><a href="#experience" target="_self">Experience</a></li>
+        <li><a href="#projects" target="_self">Projects</a></li>
+      </ul>
+      <a class="nav-cv" href="pdfs/jjulin_resume.pdf">View CV <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+
+  <div class="container" id="top">
+
+    <!-- Header -->
+    <header class="header">
       <div class="profile-info">
         <h1 class="name">Joel Julin</h1>
-        <p class="bio">
-          I'm a <a href="https://www.ri.cmu.edu/education/academic-programs/doctoral-robotics-program/">Ph.D. student in
-            Robotics</a> at
-          <a href="https://www.cmu.edu/">Carnegie Mellon University (CMU)</a>, advised by
-          <a href="https://laszlojeni.com">László Jeni</a>. My research focuses on 3D vision, with the goal of making
-          virtual scenes visually indistinguishable from reality.
+        <p class="bio bio-lead">
+          I'm a <a href="https://www.ri.cmu.edu/education/academic-programs/doctoral-robotics-program/">Ph.D. student in Robotics</a> at
+          <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, advised by
+          <a href="https://laszlojeni.com">László Jeni</a>. I study how learning systems represent and reason about dynamic visual worlds. My work spans reconstructing, tracking, and controlling 3D scenes, as well as grounding multimodal decisions in evidence across space and time.
         </p>
         <p class="bio">
-          I hold a
-          <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-robotics/">Master’s in Robotics
-            (MSR)</a> from CMU and a
-          B.S. in Computer Science from the
-          <a href="https://www.pitt.edu">University of Pittsburgh (Pitt)</a>. While at Pitt, I conducted research with
-          the
-          <a href="https://ci2cv.ri.cmu.edu/">Ci2CV Computer Vision Lab</a> at CMU's Robotics Institute under
-          <a href="https://researchers.adelaide.edu.au/profile/simon.lucey">Simon Lucey</a> (now Director of the
-          <a href="https://www.adelaide.edu.au/aiml/">Australian Institute of Machine Learning</a>), and I also worked
-          with
-          <a href="https://laszlojeni.com">Dr. Jeni’s</a> Computational Behavior Lab through the
-          <a href="https://riss.ri.cmu.edu">Robotics Institute Summer Scholars (RISS) Program</a>, supported by an
-          <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1659774">NSF Research Experience Grant</a>.
+          I hold an <a href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-robotics/">M.S. in Robotics</a> from CMU and a B.S. in Computer Science from the <a href="https://www.pitt.edu">University of Pittsburgh</a>. My research background began while at Pitt, where I worked with <a href="https://researchers.adelaide.edu.au/profile/simon.lucey">Simon Lucey</a> in the <a href="https://ci2cv.ri.cmu.edu/">Ci2CV Computer Vision Lab</a> at CMU's Robotics Institute on spatial mixing in visual representation learning. I later joined <a href="https://laszlojeni.com/lab.html">László Jeni's Computational Behavior Lab</a> through the <a href="https://riss.ri.cmu.edu">Robotics Institute Summer Scholars Program</a>, supported by an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1659774">NSF Research Experience Grant</a>.
         </p>
         <div class="social-links">
-          <a href="pdfs/jjulin_resume.pdf">CV</a>
-          <a href="mailto:jjulin@cmu.edu">jjulin@cmu.edu</a>
-          <a href="https://scholar.google.com/citations?user=2H5lzG4AAAAJ&hl=en&authuser=3">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/joel-julin-067167223/">LinkedIn</a>
+          <a class="social-primary" href="mailto:jjulin@cmu.edu">Get in touch <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=2H5lzG4AAAAJ&amp;hl=en&amp;authuser=3">Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/joel-julin-067167223/">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <img class="profile-image" src="images/Joel.png" alt="Joel Julin">
-    </div>
+      <div class="portrait-wrap">
+        <div class="portrait-grid" aria-hidden="true"></div>
+        <img class="profile-image" src="images/Joel.png" alt="Portrait of Joel Julin">
+      </div>
+    </header>
 
-    <!-- News Section -->
-    <h2 class="section-title" style="margin-bottom: -20px;">News</h2>
-    <div class="section news-section">
-      <ul class="news-list">
-        <li class="news-item"><span class="news-date">Aug. 2025:</span> I started my Ph.D. in Robotics at <a
-            href="https://www.cmu.edu/">CMU</a>!</li>
-        <li class="news-item"><span class="news-date">July. 2025:</span> I completed my Master's in Robotics at <a
-            href="https://www.cmu.edu/">Carnegie Mellon University </a> (view thesis <a
-            href="https://www.ri.cmu.edu/publications/towards-geometric-reasoning-for-dynamic-and-unconstrained-3d-scenes/">here</a>)!
-        </li>
-        <li class="news-item"><span class="news-date">Apr. 2025:</span> Paper on <a
-            href="https://www.arxiv.org/abs/2503.16760">Rethinking the Role of Spatial Mixing</a> is accepted to <a
-            href="https://sites.google.com/view/elvm/home">eLVM</a> workshop at CVPR '25. </li>
-        <li class="news-item"><span class="news-date">Feb. 2025:</span> I accepted an offer from <a
-            href="https://www.cmu.edu/">Carnegie Mellon</a> for their Ph.D in Robotics program, looking forward to
-          continuing this Fall.</li>
-        <li class="news-item"><span class="news-date">Jan. 2025:</span> Work on analytical flow supervision for 3DGS (<a
-            href="https://gslk.github.io">GSLK</a>) accepted to ICLR '25. </li>
-        <li class="news-item"><span class="news-date">Feb. 2024:</span> Work on Controllable Gaussian Splatting ( <i
-            class="fas fa-cogs" aria-hidden="true" style="color:#201f1f; margin-right: 4px;"></i><a
-            href="https://cogs2024.github.io">CoGS</a>) accepted to CVPR '24.</li>
-        <li class="news-item"><span class="news-date">Mar. 2023:</span> I accepted an offer from <a
-            href="https://www.cmu.edu/">Carnegie Mellon</a> for their M.S. in Robotics program.</li>
-        <li class="news-item"><span class="news-date">Feb. 2023:</span> Work on dynamic light field networks (<a
-            href="https://dylin2023.github.io">DyLiN</a>) has been accepted to <a
-            href="https://cvpr2023.thecvf.com">CVPR '23</a>.</li>
-        <li class="news-item"><span class="news-date">Dec. 2022:</span> Accepted a full-time position at <a
-            href="https://www.cmu.edu/">CMU</a> to continue working with <a href="https://laszlojeni.com/lab.html">Dr.
-            Jeni's lab</a> during the spring.</li>
-        <li class="news-item"><span class="news-date">Dec. 2022:</span> I graduated from the <a
-            href="https://www.pitt.edu">University of Pittsburgh</a>!</li>
-        <li class="news-item"><span class="news-date">Nov. 2022:</span> Won gold medal at <a
-            href="https://cy.ncss.cn/en/">the 8th China International College Students' 'Internet+' Innovation and
-            Entrepreneurship Competition</a>.</li>
-        <li class="news-item"><span class="news-date">Oct. 2022:</span> I attended my first hackathon at <a
-            href="https://www.mit.edu/">MIT</a>, where I worked on <a
-            href="https://github.com/anayflima/immersive-NeRF-api">this project</a>.</li>
-        <li class="news-item"><span class="news-date">May 2022:</span> Accepted to Carnegie Mellon's <a
-            href="https://riss.ri.cmu.edu/">Robotics Institute Summer Scholar</a> program (see project <a
-            href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">here</a>).</li>
-        <li class="news-item"><span class="news-date">May 2021:</span> Began working with <a
-            href="http://www.cs.cmu.edu/~CI2CV/">Dr. Lucey's computer vision lab</a> (see research <a
-            href="pdfs/channel_mixing.pdf">here</a>).</li>
-      </ul>
-    </div>
+    <!-- News -->
+    <section class="section" id="news">
+      <div class="section-heading">
+        <h2 class="section-title">News</h2>
+        <p class="section-intro">Recent publications, milestones, and research updates.</p>
+      </div>
+      <div class="news-scroll">
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">Oct. 2026</span>
+            <span>Reconstruct What You Can: Distractor-free 4D Gaussian Splatting accepted at WACV '27!</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Sept. 2026</span>
+            <span>Benchmark paper on Audio-Visually Grounded Chain-of-Thought Reasoning accepted at NeurIPS '26!</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Sept. 2026</span>
+            <span>Co-organized <a href="https://beamv2-eccv-workshop.github.io">BEAM 2</a>, the 2nd Workshop on Benchmarking Evidence-Aligned Multimodal Reasoning, at ECCV '26.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Aug. 2025</span>
+            <span>Started Ph.D. in Robotics at <a href="https://www.cmu.edu/">CMU</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Jul. 2025</span>
+            <span>Completed Master's in Robotics at CMU. View the
+              <a href="https://www.ri.cmu.edu/publications/towards-geometric-reasoning-for-dynamic-and-unconstrained-3d-scenes/">thesis</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Apr. 2025</span>
+            <span>Paper on <a href="https://www.arxiv.org/abs/2503.16760">Rethinking the Role of Spatial Mixing</a>
+              accepted to <a href="https://sites.google.com/view/elvm/home">eLVM</a> workshop at CVPR '25.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Feb. 2025</span>
+            <span>Accepted Ph.D. offer from <a href="https://www.cmu.edu/">Carnegie Mellon</a> in Robotics, starting
+              Fall 2025.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Jan. 2025</span>
+            <span>Work on analytical flow supervision for 3DGS (<a href="https://gslk.github.io">GSLK</a>) accepted to
+              ICLR '25.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Feb. 2024</span>
+            <span>Work on Controllable Gaussian Splatting (<a href="https://cogs2024.github.io">CoGS</a>) accepted to
+              CVPR '24.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Mar. 2023</span>
+            <span>Accepted M.S. offer from <a href="https://www.cmu.edu/">Carnegie Mellon</a> in Robotics.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Feb. 2023</span>
+            <span>Work on dynamic light field networks (<a href="https://dylin2023.github.io">DyLiN</a>) accepted to
+              <a href="https://cvpr2023.thecvf.com">CVPR '23</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Dec. 2022</span>
+            <span>Accepted full-time position at <a href="https://www.cmu.edu/">CMU</a> to continue with
+              <a href="https://laszlojeni.com/lab.html">Dr. Jeni's lab</a> in the spring.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Dec. 2022</span>
+            <span>Graduated from the <a href="https://www.pitt.edu">University of Pittsburgh</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Nov. 2022</span>
+            <span>Won gold medal at <a href="https://cy.ncss.cn/en/">the 8th China International College Students'
+                'Internet+' Innovation and Entrepreneurship Competition</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">Oct. 2022</span>
+            <span>Attended HackMIT at <a href="https://www.mit.edu/">MIT</a>, building
+              <a href="https://github.com/anayflima/immersive-NeRF-api">Immersive NeRF</a>.</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">May 2022</span>
+            <span>Accepted to CMU's <a href="https://riss.ri.cmu.edu/">Robotics Institute Summer Scholar</a> program
+              (<a href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">project</a>).</span>
+          </li>
+          <li class="news-item">
+            <span class="news-date">May 2021</span>
+            <span>Began working with <a href="http://www.cs.cmu.edu/~CI2CV/">Dr. Lucey's computer vision lab</a>
+              (see research <a href="pdfs/channel_mixing.pdf">here</a>).</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Research Section -->
-    <div class="section">
-      <h2 class="section-title">Research</h2>
+    <!-- Research -->
+    <section class="section" id="research">
+      <div class="section-heading section-heading-wide">
+        <div>
+          <h2 class="section-title">Research</h2>
+        </div>
+        <p class="section-intro">Learning representations that make dynamic scenes more realistic, controllable, and geometrically grounded.</p>
+      </div>
+
+      <div class="research-item" id="recan-gs">
+        <div class="research-image recan-teaser">
+          <video muted autoplay loop playsinline preload="metadata" width="640" height="400"
+            poster="images/recan-gs-pipeline-poster.jpg"
+            aria-label="ReCan-GS pipeline: bottle input video, deformation uncertainty visualization, and clean reconstruction with the distractor removed and bottle-opening motion preserved.">
+            <source src="images/recan-gs-pipeline.mp4" type="video/mp4">
+            <img src="images/recan-gs-pipeline-poster.jpg" alt="ReCan-GS: input to deformation uncertainty to a clean dynamic scene, preserving the bottle-opening motion.">
+          </video>
+        </div>
+        <div class="research-content">
+          <h3 class="research-title">Reconstruct What You Can: Distractor-free 4D Gaussian Splatting</h3>
+          <div class="research-authors">
+            <b><a href="https://joeljulin.github.io">Joel Julin</a></b>,
+            <a href="https://spongepuddingg.github.io/louise-xie-personal/">Liuyue Xie</a>,
+            <a href="https://ananyabal.github.io">Ananya Bal</a>,
+            <a href="https://openreview.net/profile?id=~Mose_Sakashita1">Mose Sakashita</a>,
+            <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>, and
+            <a href="https://laszlojeni.com">Laszlo A. Jeni</a>
+          </div>
+          <p class="research-summary">Reconstructs dynamic scenes while separating transient occluders, reflections, and fog using uncertainty from the learned deformation field.</p>
+          <span class="venue-badge">WACV '27</span>
+          <div class="research-links">
+            <span class="link-soon">Paper forthcoming</span>
+          </div>
+        </div>
+      </div>
 
       <div class="research-item">
-        <div class="research-image">
+        <div class="research-image anchor-teaser">
+          <video muted autoplay loop playsinline preload="metadata" width="600" height="540"
+            poster="images/anchor-reasoning-icons-poster.png"
+            aria-label="ANCHOR grounded reasoning: hands guide fabric and a machine whirs, supporting the answer sewing. Video includes synchronized evidence boxes and visual and audio icons.">
+            <source src="images/anchor-reasoning-icons-loop.mp4" type="video/mp4">
+            <img src="images/anchor-reasoning-icons-poster.png" alt="ANCHOR: hands guide fabric plus machine whir implies sewing, with visual and audio evidence icons.">
+          </video>
+        </div>
+        <div class="research-content">
+          <h3 class="research-title">ANCHOR: Audio-Visually Grounded Chain-of-Thought Reasoning Benchmark</h3>
+          <div class="research-authors">
+            <b>Joel Julin*</b>,
+            <a href="https://sites.google.com/view/sourajakundu/home?pli=1&authuser=0">Souraja Kundu*</a>,
+            <a href="https://pandaliza.github.io">Liza Dahiya</a>,
+            <a href="https://gzhihongwei.github.io">George Wei</a>,
+            <a href="https://spongepuddingg.github.io/louise-xie-personal/">Liuyue Xie</a>,
+            <a href="https://scholar.google.com/citations?user=ieaWAcEAAAAJ&hl=en">Jingru Yi</a>,
+            <a href="https://scholar.google.com/citations?user=efE70pEAAAAJ&hl=en">Xu Zhang</a>,
+            <a href="https://scholar.google.com/citations?user=Y-I1X9QAAAAJ&hl=en">Hao Yang</a>,
+            <a href="https://laszlojeni.com">László Jeni</a>
+          </div>
+          <p class="research-summary">Benchmarks whether multimodal models ground each reasoning step in the correct visual and auditory evidence across time.</p>
+          <span class="venue-badge">NeurIPS '26 · E&amp;D</span>
+          <div class="research-note">* Joint first authors</div>
+          <div class="research-links">
+            <span class="link-soon">Paper forthcoming</span>
+            <a href="https://anchorbenchmark.github.io/">Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-item">
+        <div class="research-image spatial-mixing-teaser">
           <video muted autoplay loop playsinline>
             <source src="images/chans_overlay.mp4" type="video/mp4">
             <source src="images/chans_overlay.webm" type="video/webm">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="research-content">
@@ -114,44 +234,43 @@
             <b>Joel Julin</b>, and
             <a href="https://researchers.adelaide.edu.au/profile/simon.lucey">Simon Lucey</a>
           </div>
-          <div class="research-venue">CVPR-W '25</div>
+          <p class="research-summary">Shows that learning channel mixing while freezing spatial mixing can preserve classification performance and improve adversarial robustness.</p>
+          <span class="venue-badge">CVPR-W '25</span>
           <div class="research-links">
-            <a href="https://www.arxiv.org/abs/2503.16760">[Paper]</a>
+            <a href="https://www.arxiv.org/abs/2503.16760">Paper</a>
           </div>
         </div>
       </div>
 
-      <!-- Research Item 2 -->
       <div class="research-item">
         <div class="research-image">
           <video muted autoplay loop playsinline>
             <source src="images/gslk_overlay.mp4" type="video/mp4">
             <source src="images/gslk_overlay.webm" type="video/webm">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="research-content">
-          <h3 class="research-title"><a href="https://arxiv.org/abs/2407.11309">Gaussian Splatting Lucas-Kanade</a></h3>
+          <h3 class="research-title"><a href="https://arxiv.org/abs/2407.11309">Gaussian Splatting Lucas-Kanade</a>
+          </h3>
           <div class="research-authors">
-            <a href="http://louisexie.simple.ink/">Liuyue Xie</a>, <b>Joel Julin</b>,
-            <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>,
-            and <a href="https://laszlojeni.com">László Jeni</a>
+            <a href="https://spongepuddingg.github.io/louise-xie-personal/">Liuyue Xie</a>, <b>Joel Julin</b>,
+            <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>, and
+            <a href="https://laszlojeni.com">László Jeni</a>
           </div>
-          <div class="research-venue">ICLR '25</div>
+          <p class="research-summary">Adapts Lucas-Kanade to dynamic Gaussian splatting with analytical scene-flow constraints for reconstructing highly dynamic scenes from limited camera motion.</p>
+          <span class="venue-badge">ICLR '25</span>
           <div class="research-links">
-            <a href="https://arxiv.org/abs/2407.11309">[Paper]</a>
-            <a href="https://gs-lk.github.io">[Project]</a>
+            <a href="https://arxiv.org/abs/2407.11309">Paper</a>
+            <a href="https://gs-lk.github.io">Project</a>
           </div>
         </div>
       </div>
 
-      <!-- Research Item 2 -->
       <div class="research-item">
         <div class="research-image">
           <video muted autoplay loop playsinline>
             <source src="images/cogs-video.mp4" type="video/mp4">
             <source src="images/cogs-video.webm" type="video/webm">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="research-content">
@@ -164,22 +283,21 @@
             <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>, and
             <a href="https://laszlojeni.com">László Jeni</a>
           </div>
-          <div class="research-venue">CVPR '24</div>
+          <p class="research-summary">Enables real-time, direct control of dynamic Gaussian-splatting scenes without precomputing control signals.</p>
+          <span class="venue-badge">CVPR '24</span>
           <div class="research-links">
-            <a href="https://arxiv.org/abs/2312.05664">[Paper]</a>
-            <a href="https://cogs2023.github.io">[Project]</a>
-            <a href="https://github.com/Heng14/CoGS/">[Code]</a>
+            <a href="https://arxiv.org/abs/2312.05664">Paper</a>
+            <a href="https://cogs2024.github.io">Project</a>
+            <a href="https://github.com/Heng14/CoGS/">Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Research Item 3 -->
       <div class="research-item">
         <div class="research-image">
           <video muted autoplay loop playsinline>
             <source src="images/dylin_overlay.mp4" type="video/mp4">
             <source src="images/dylin_overlay.webm" type="video/webm">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="research-content">
@@ -192,22 +310,21 @@
             <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>, and
             <a href="https://laszlojeni.com">László Jeni</a>
           </div>
-          <div class="research-venue">CVPR '23</div>
+          <p class="research-summary">Extends light field networks to nonrigid, topologically changing scenes while rendering 25 to 71 times faster than prior dynamic representations.</p>
+          <span class="venue-badge">CVPR '23</span>
           <div class="research-links">
-            <a href="https://arxiv.org/abs/2303.14243">[Paper]</a>
-            <a href="https://dylin2023.github.io">[Project]</a>
-            <a href="https://github.com/Heng14/DyLiN">[Code]</a>
+            <a href="https://arxiv.org/abs/2303.14243">Paper</a>
+            <a href="https://dylin2023.github.io">Project</a>
+            <a href="https://github.com/Heng14/DyLiN">Code</a>
           </div>
         </div>
       </div>
 
-      <!-- Research Item 5 -->
       <div class="research-item">
         <div class="research-image">
           <video muted autoplay loop playsinline>
             <source src="images/edit_nerf.mov" type="video/mp4">
             <source src="images/edit_nerf.webm" type="video/webm">
-            Your browser does not support the video tag.
           </video>
         </div>
         <div class="research-content">
@@ -217,29 +334,32 @@
             <a href="https://heng14.github.io/">Heng Yu</a>,
             <a href="https://laszlojeni.com">László Jeni</a>
           </div>
-          <div class="research-venue">2022 RISS Working Paper Journal</div>
+          <p class="research-summary">Uses automatic human segmentation to edit static and dynamic NeRF scenes without manual object annotation.</p>
+          <span class="venue-badge">RISS '22</span>
           <div class="research-links">
-            <a href="pdfs/automated_editing.pdf">[Paper]</a>
-            <a href="pdfs/2022-RISS-Automated-Content-Editing-in-NeRFs-Julin-Joel-JENI.pdf">[Poster]</a>
-            <a href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">[Video]</a>
+            <a href="pdfs/automated_editing.pdf">Paper</a>
+            <a href="pdfs/2022-RISS-Automated-Content-Editing-in-NeRFs-Julin-Joel-JENI.pdf">Poster</a>
+            <a href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">Video</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Education Section -->
-    <div class="section">
-      <h2 class="section-title">Education</h2>
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section-heading">
+        <h2 class="section-title">Education</h2>
+      </div>
 
       <div class="education-item">
         <div class="education-info">
           <h3><a href="https://www.cmu.edu">Carnegie Mellon University</a></h3>
           <p>Pittsburgh, Pennsylvania</p>
-          <p>PhD in Robotics • Aug. 2025 - Present</p>
-          <p>M.S. in Robotics • Aug. 2023 - Aug. 2025</p>
+          <p>PhD in Robotics · Aug. 2025 – Present</p>
+          <p>M.S. in Robotics · Aug. 2023 – Aug. 2025</p>
         </div>
         <div class="education-logo">
-          <img src="./images/cmu2.png" alt="Carnegie Mellon University Logo" style="width: 190px;">
+          <img src="./images/cmu2.png" alt="Carnegie Mellon University Logo">
         </div>
       </div>
 
@@ -247,137 +367,146 @@
         <div class="education-info">
           <h3><a href="https://www.pitt.edu">The University of Pittsburgh</a></h3>
           <p>Pittsburgh, Pennsylvania</p>
-          <p>B.S. in Computer Science • Aug. 2020 - Dec. 2022</p>
+          <p>B.S. in Computer Science · Aug. 2020 – Dec. 2022</p>
         </div>
         <div class="education-logo">
-          <img src="./images/pitt.png" alt="University of Pittsburgh Logo" style="width: 210px;">
+          <img src="./images/pitt.png" alt="University of Pittsburgh Logo">
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Coursework Section -->
-    <div class="section">
-      <h2 class="section-title">Selected Coursework</h2>
+    <!-- Coursework -->
+    <section class="section">
+      <div class="section-heading compact-heading">
+        <h2 class="section-title">Selected Coursework</h2>
+      </div>
 
       <div class="course-section">
         <div class="course-institution">
           <h4>Carnegie Mellon University, Robotics Institute</h4>
-          <img src="./images/cmu.png" width="175px" alt="CMU RI Logo">
+          <img src="./images/cmu.png" alt="CMU RI Logo">
         </div>
 
         <div class="course-item">
-          <p>16-720 - <a
+          <p>16-720 · <a
               href="https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/16720-computer-vision.html">Computer
               Vision</a></p>
-          <p>• Instructor: <a href="https://www.cs.cmu.edu/~srinivas/">Srinivasa Narasimhan</a></p>
+          <p class="course-instructor">Instructor: <a href="https://www.cs.cmu.edu/~srinivas/">Srinivasa
+              Narasimhan</a></p>
         </div>
 
         <div class="course-item">
-          <p>16-825 - <a href="https://learning3d.github.io">Learning for 3D Vision</a></p>
-          <p>• Instructor: <a href="http://shubhtuls.github.io">Shubham Tulsiani</a></p>
+          <p>16-825 · <a href="https://learning3d.github.io">Learning for 3D Vision</a></p>
+          <p class="course-instructor">Instructor: <a href="http://shubhtuls.github.io">Shubham Tulsiani</a></p>
         </div>
 
         <div class="course-item">
-          <p>16-824 - <a href="https://visual-learning.cs.cmu.edu">Visual Learning and Recognition</a></p>
-          <p>• Instructor: <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a></p>
+          <p>16-824 · <a href="https://visual-learning.cs.cmu.edu">Visual Learning and Recognition</a></p>
+          <p class="course-instructor">Instructor: <a href="https://www.cs.cmu.edu/~junyanz/">Jun-Yan Zhu</a></p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Research Experience Section -->
-    <div class="section">
-      <h2 class="section-title">Research Experience</h2>
+    <!-- Research Experience -->
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <h2 class="section-title">Research Experience</h2>
+      </div>
+
       <div class="experience-item">
         <div class="experience-info">
-          <h3><a href="https://laszlojeni.com/lab.html">Fujitsu Research of America</a></h3>
-          <h4>Pittsburgh, Pennsylvania</h4>
-          <p>Research Intern • Jan 2026 to April 2026</p>
-          <p>Advisor: <a href="https://mosesakashita.me">Mose Sakashita</a>/<a
+          <h3><a href="https://www.fujitsu.com/us/about/businesspolicy/research/">Fujitsu Research of America</a></h3>
+          <p>Pittsburgh, Pennsylvania</p>
+          <p>Research Intern · Jan. 2026 – Apr. 2026</p>
+          <p>Advisor: <a href="https://mosesakashita.me">Mose Sakashita</a> / <a
               href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a></p>
         </div>
         <div class="experience-logo">
-          <img src="./images/Fujitsu-Logo.svg.png" alt="CMU Logo" style="width: 190px;">
+          <img src="./images/Fujitsu-Logo.svg.png" alt="Fujitsu Logo">
         </div>
       </div>
 
       <div class="experience-item">
         <div class="experience-info">
           <h3><a href="https://laszlojeni.com/lab.html">Computational Behavior (CUBE) Lab</a></h3>
-          <h4>Carnegie Mellon University, Robotics Institute</h4>
-          <p>Research Assistant • Aug 2023 to Present</p>
-          <p>Research Intern • May 2022 to Aug. 2023</p>
+          <p>Carnegie Mellon University, Robotics Institute</p>
+          <p>Research Assistant · Aug. 2023 – Present</p>
+          <p>Research Intern · May 2022 – Aug. 2023</p>
           <p>Advisor: <a href="https://laszlojeni.com">László Jeni</a></p>
         </div>
         <div class="experience-logo">
-          <img src="./images/cube.png" alt="CMU Logo" style="width: 190px;">
+          <img src="./images/cube.png" alt="CUBE Lab Logo">
         </div>
       </div>
 
       <div class="experience-item">
         <div class="experience-info">
           <h3><a href="http://www.cs.cmu.edu/~CI2CV/">Computer Vision (Ci2Cv) Lab</a></h3>
-          <h4>Carnegie Mellon University, Robotics Institute</h4>
-          <p>Research Intern • May 2021 to June 2022</p>
+          <p>Carnegie Mellon University, Robotics Institute</p>
+          <p>Research Intern · May 2021 – Jun. 2022</p>
           <p>Advisor: <a href="https://researchers.adelaide.edu.au/profile/simon.lucey">Simon Lucey</a></p>
         </div>
         <div class="experience-logo">
-          <img src="./images/ci2cv.png" alt="CI2CV Logo" style="width: 180px;">
+          <img src="./images/ci2cv.png" alt="CI2CV Lab Logo">
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Projects Section -->
-    <div class="section">
-      <h2 class="section-title">Selected Projects</h2>
-
-      <div class="education-item">
-        <div class="education-info">
-          <h3><a href="#">Dynamic Gaussian Splatting VR Viewer</a></h3>
-          <p><a href="">[Code Release Soon!]</a></p>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section-heading section-heading-wide">
+        <div>
+          <h2 class="section-title">Selected Projects</h2>
         </div>
-        <div class="education-logo">
-          <video muted autoplay loop playsinline style="width: 300px;">
+        <p class="section-intro">Systems and prototypes exploring immersive 3D experiences and applied computer vision.</p>
+      </div>
+
+      <div class="project-item">
+        <div class="project-info">
+          <h3><a href="#">Dynamic Gaussian Splatting VR Viewer</a></h3>
+          <p>Code release coming soon.</p>
+        </div>
+        <div class="project-media vr-viewer-teaser">
+          <video muted autoplay loop playsinline>
             <source src="./images/vr_teaser.mp4" type="video/mp4">
-            Your browser does not support the video tag.
           </video>
         </div>
       </div>
 
-      <div class="education-item">
-        <div class="education-info">
+      <div class="project-item">
+        <div class="project-info">
           <h3><a href="https://github.com/anayflima/immersive-NeRF-api">Immersive NeRF</a></h3>
           <p>Massachusetts Institute of Technology (HackMIT)</p>
-          <p><a href="https://github.com/anayflima/immersive-NeRF-api">[Submission]</a></p>
+          <p><a href="https://github.com/anayflima/immersive-NeRF-api">Submission</a></p>
         </div>
-        <div class="education-logo">
-          <img src="./images/mit.png" alt="MIT Logo" style="width: 250px;">
+        <div class="project-media">
+          <img src="./images/mit.png" alt="MIT Logo">
         </div>
       </div>
 
-      <div class="education-item">
-        <div class="education-info">
-          <h3><a href="https://cy.ncss.cn/en/">AI for Rectal Cancer Diagnosis <span
-                style="color: gold; font-weight: bold;">(Gold Medal Project)</span></a></h3>
-          <p>8th China ‘Internet+’ Innovation Competition</p>
-          <!-- <p><span style="color: gold; font-weight: bold;">Gold Medal</span></p> -->
-          <p><a href="pdfs/internet+.pdf">[Media Post]</a></p>
+      <div class="project-item">
+        <div class="project-info">
+          <h3>
+            <a href="https://cy.ncss.cn/en/">AI for Rectal Cancer Diagnosis</a>
+            <span class="gold-medal">Gold Medal</span>
+          </h3>
+          <p>8th China 'Internet+' Innovation Competition</p>
+          <p><a href="pdfs/internet+.pdf">Media Post</a></p>
         </div>
-        <div class="education-logo">
-          <img src="./images/cmu_stanford.png" alt="CMU and Stanford Logos" style="width: 350px;">
+        <div class="project-media">
+          <img src="./images/cmu_stanford.png" alt="CMU and Stanford Logos">
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
-      <p>Website design inspired by <a href="https://georgecazenavette.github.io">George Cazenavette</a> and <a
-          href="https://jonbarron.info">Jon Barron</a></p>
-      <a href='https://clustrmaps.com/site/1bsuf'>
-        <img
-          src='//clustrmaps.com/map_v2.png?cl=080808&w=70&t=n&d=juWvnJeZRrCwq_coqyZofOPo8WvVJdHxXTS8BUPaSnE&co=ffffff&ct=808080'
-          alt="Visitor Map" />
-      </a>
-    </div>
+    <footer class="footer">
+      <div>
+        <p class="footer-name">Joel Julin</p>
+      </div>
+      <p class="footer-note"><a href="#top" target="_self">Back to top ↑</a></p>
+    </footer>
+
   </div>
 </body>
 
